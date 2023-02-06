@@ -1,5 +1,6 @@
 const userId = 'user123';
 const sdkKey = 'KVpGWnzPGKvvQ8yeEWmJZ';
+const flagKey = 'buy_button';
 
 // Button component
 const Button = ({decision}) => {
@@ -26,8 +27,9 @@ const Product = ({decision, title, image, description}) => {
 
 // App component
 const App = () => {
-	const user = optimizelyClient.createUserContext(userId);
-  const decision = user.decide('buy_button');
+  // 
+  const user = optimizelyClient.createUserContext(userId);
+  const decision = user.decide(flagKey);
 
   return (
     <div className="row">
