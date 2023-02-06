@@ -1,14 +1,26 @@
-const userId = 'user123';
-const sdkKey = 'KVpGWnzPGKvvQ8yeEWmJZ';
-const flagKey = 'buy_button';
+const sdkKey = 'UURF9FECB7wHtC2QSMMkS';
+const flagKey = 'mb_save_button';
 
-// Button component
-const Button = ({decision}) => {
+// Add-to-cart Button component
+const AddToCartButton = () => {
+  // TODO: track clicks
   return (
-    <a href="#" className={`btn btn-${decision.variationKey}`}>
+    <a href="#" className="btn btn-success">
       Add to cart
     </a>
   );
+};
+
+// Save Button component
+const SaveButton = ({decision}) => {
+  // TODO: track clicks
+	if (decision.enabled) {
+    return (
+      <a href="#" className="btn btn-danger float-end">
+        Save
+      </a>
+    );
+  }
 };
 
 // Product component
@@ -19,7 +31,8 @@ const Product = ({decision, title, image, description}) => {
       <div className="card-body">
         <h5 className="card-title">{title}</h5>
         <p className="card-text">{description}</p>
-        <Button decision={decision}/>
+        <AddToCartButton/>
+        <SaveButton decision={decision}/>
       </div>
     </div>
   );
@@ -27,12 +40,18 @@ const Product = ({decision, title, image, description}) => {
 
 // App component
 const App = () => {
-  // 
+  // Generate a random user id each time
+  const userId = Math.floor(Math.random() * 900 + 100).toString();
+  // Create an Optimizely user context for the user
   const user = optimizelyClient.createUserContext(userId);
+  // Decide which variation to show to the user
   const decision = user.decide(flagKey);
 
   return (
     <div className="row">
+      <div className="col-12">
+        <h1>Welcome user <code>{userId}</code></h1>
+      </div>
       <div className="col">
         <Product
           decision={decision}
@@ -66,5 +85,5 @@ const root = ReactDOM.createRoot(container);
 
 // Only start rendering once the Optimizely client is ready
 optimizelyClient.onReady().then(() => {
-	root.render(<App/>);
+  root.render(<App/>);
 });
