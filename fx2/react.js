@@ -1,38 +1,59 @@
 const sdkKey = 'UURF9FECB7wHtC2QSMMkS';
 const flagKey = 'mb_save_button';
+const eventKey = 'mb_product_interaction'
 
 // Add-to-cart Button component
-const AddToCartButton = () => {
-  // TODO: track clicks
+const AddToCartButton = ({title, user}) => {
+  // Handle clicks
+  const clickHandler = () => {
+    user.trackEvent(eventKey);
+    alert(`${title} added to cart`);
+  };
+
   return (
-    <a href="#" className="btn btn-success">
+    <button className="btn btn-success" onClick={clickHandler}>
       Add to cart
-    </a>
+    </button>
   );
 };
 
 // Save Button component
-const SaveButton = ({decision}) => {
-  // TODO: track clicks
-	if (decision.enabled) {
+const SaveButton = ({title, user}) => {
+  // Decide which variation to show to the user
+  // NOTE: if you are on the Impressions move, avoid calling the decide function for every product 
+  const decision = user.decide(flagKey);
+
+  if (decision.enabled) {
+    // Handle clicks
+    const clickHandler = () => {
+      user.trackEvent(eventKey);
+      alert(`${title} saved to profile`);
+    };
+
+    // Display the Save button
     return (
-      <a href="#" className="btn btn-danger float-end">
+      <button className="btn btn-danger float-end" onClick={clickHandler}>
         Save
-      </a>
+      </button>
     );
+  } else {
+    // Don't display anything; an empty React Fragment
+    return (
+      <React.Fragment/>
+    )
   }
 };
 
 // Product component
-const Product = ({decision, title, image, description}) => {
+const Product = ({user, title, image, description}) => {
   return (
     <div className="card">
       <img className="card-img-top" src={image} alt={title}/>
       <div className="card-body">
         <h5 className="card-title">{title}</h5>
         <p className="card-text">{description}</p>
-        <AddToCartButton/>
-        <SaveButton decision={decision}/>
+        <AddToCartButton title={title} user={user}/>
+        <SaveButton title={title} user={user}/>
       </div>
     </div>
   );
@@ -44,8 +65,6 @@ const App = () => {
   const userId = Math.floor(Math.random() * 900 + 100).toString();
   // Create an Optimizely user context for the user
   const user = optimizelyClient.createUserContext(userId);
-  // Decide which variation to show to the user
-  const decision = user.decide(flagKey);
 
   return (
     <div className="row">
@@ -54,14 +73,14 @@ const App = () => {
       </div>
       <div className="col">
         <Product
-          decision={decision}
+          user={user}
           title="Camel Marl Woven Scarf"
           image="https://cdn.shopify.com/s/files/1/0923/0916/products/TM56P13MCAM_Zoom_F_1_grande.jpg"
           description="100% Acrylic, Machine washable, Color: Brown, Code: 56P13MCAM"/>
       </div>
       <div className="col">
         <Product
-          decision={decision}
+          user={user}
           title="SS Aloha Short Sleeve Buttondown"
           image="https://cdn.shopify.com/s/files/1/0923/0916/products/ZHURdWAGef_the_ss_aloha_popover_0_original_grande.jpg"
           description="The Summer Popover offers a one-two punch of personality: its slubby fabric offers great texture while the California-themed aloha print short sleeve style will turn every head on the boardwalk as you skate or surf by."/>

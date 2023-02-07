@@ -6,7 +6,7 @@ In this hands-on lab, you will create a feature experiment from scratch. You wil
 
 You already have a user account in Optimzily and created a separate project for the hands-on labs.
 
-## Background story
+## Background story - Introduction
 
 You are running a succesful webshop. You have just developed a feature that allows logged-in users to save products to their wishlist. Before releasing this feature to everyone, you want to make sure that this does indeed increase product interactions and doesn't decrease purchases. Therefore, we will create an A/B test where 50% does not see the save button, and the other 50% does. Let's get started!
 
@@ -46,9 +46,12 @@ You are running a succesful webshop. You have just developed a feature that allo
 1. In the top-right, click `Settings` and change the editor layout to `Tabs (columns)`
 1. Open the `HTML` tab
 1. Paste the content of the [`index.html`](./index.html) file
+    - You can use the "Copy raw content button"
 1. Open the `JavaScript` tab
 1. Click on the `JavaScript + No-Library (pure JS)` dropdown and change Language to `React`
 1. Paste the content of the [`react.js`](./react.js) file
+    - You can use the "Copy raw content button"
+    - Feel free to look through the code to see if you understand what it does
 1. Go to line 1 of the React code
 1. Paste the SDK key you copied in step 5 between the two apostrophes
 1. Go to line 2 of the React code
@@ -56,6 +59,7 @@ You are running a succesful webshop. You have just developed a feature that allo
 1. Click `Run` in the top-left corner
     - Every time you click run you will emulate a different user
 1. Keep count of how many users do and do not see the `Save` button
+    - Feel free to click on the different buttons to generate some events
 1. Grab some coffee, tea, water, or soda
     - It takes a few minutes for the results are available
 1. Go back to [app.optimizely.com](https://app.optimizely.com/)
@@ -64,3 +68,7 @@ You are running a succesful webshop. You have just developed a feature that allo
 1. Click on the icon that looks like bar chart :bar_chart:
 1. Verify that the number of visitors matches with your count from step 33
 1. Congratulations! You've completed the lab
+
+## Background story - Conclusion
+
+After setting up a few monitoring metrics, such as number of product orders and average product per order, you publish the experiment to the production environment. After a few days, the experiments reaches statistical significance showing that product interactions increased without a (statistical significant) decrease in the monitoring metrics. You can now switch this feature flag from an A/B test to a targeted delivery so it is rolled out to 100% of your visitors. On to the next experiment!
