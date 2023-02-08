@@ -1,6 +1,20 @@
 const sdkKey = 'UURF9FECB7wHtC2QSMMkS';
 const flagKey = 'mb_save_button';
-const eventKey = 'mb_product_interaction'
+const eventKey = 'mb_product_interaction';
+const attributeKey = 'mb_is_logged_in';
+
+// Function to determine the class name for a given variation
+const getClassNameForVariationKey = (variationKey) => {
+  switch(variationKey) {
+    case 'green':
+      return 'btn btn-success float-end';
+    case 'blue':
+      return 'btn btn-primary float-end';
+    case 'red':
+    default:
+      return 'btn btn-danger float-end';
+  }
+};
 
 // Add-to-cart Button component
 const AddToCartButton = ({title, user}) => {
@@ -32,7 +46,9 @@ const SaveButton = ({title, user}) => {
 
     // Display the Save button
     return (
-      <button className="btn btn-danger float-end" onClick={clickHandler}>
+      <button
+        className={getClassNameForVariationKey(decision.variationKey)}
+        onClick={clickHandler}>
         Save
       </button>
     );
@@ -63,13 +79,19 @@ const Product = ({user, title, image, description}) => {
 const App = () => {
   // Generate a random user id each time
   const userId = Math.floor(Math.random() * 9000 + 1000).toString();
+  // Determine whether they are logged in or not
+  // Let's say that 75% of users are logged in
+  const isLoggedIn = Math.random() < 0.75;
   // Create an Optimizely user context for the user
-  const user = optimizelyClient.createUserContext(userId);
+  const user = optimizelyClient.createUserContext(userId, {
+    [attributeKey]: isLoggedIn,
+  });
 
   return (
     <div className="row">
       <div className="col-12">
         <h1>Welcome user <code>{userId}</code></h1>
+        <h3>You {isLoggedIn?'ARE':'are NOT'} logged in</h3>
       </div>
       <div className="col">
         <Product
