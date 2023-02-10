@@ -12,6 +12,8 @@ You are running a succesful webshop. You have just developed a feature that allo
 
 ## Instructions
 
+Notepad!!
+
 1. To prevent everyone from creating the same flag, pick a prefix that is unique to you
     - You could use a nickname, your initials, postal code, or date of birth
     - For example, John Doe could use the prefix `jd`
@@ -32,12 +34,11 @@ You are running a succesful webshop. You have just developed a feature that allo
     - Key: Your prefix followed by `_save_button`
     - Description: "Toggle for save button"
 1. Click on the `Create Flag` button
-1. Click on the flag that you created in step 10
 1. Click on the toggle at the top of the page to turn the flag `On`
 1. Click on the `Add rule` button and select `A/B Test`
 1. Keep most of the settings as-is
-1. Click on the `Select a Variation` and select `On`
-1. Open the `Metrics` dropdown and search/select the event you created in step 7
+1. Click on the `Select a Variation` dropdown in the `Variations` section and select `On`
+1. Click on the `Search to add metrics` field in the `Metrics` section and add the event you created in step 7
 1. Don't change any settings and click on the `Add metric` button
 1. Click on the `Save` button
 1. Hurray! You're first feature experiment is done; now let's see it in action
@@ -45,11 +46,11 @@ You are running a succesful webshop. You have just developed a feature that allo
     - This is an online code editor, so you do not need to install anything on your computer
 1. In the top-right, click `Settings` and change the editor layout to `Tabs (columns)`
 1. Open the `HTML` tab
-1. Paste the content of the [`index.html`](./index.html) file
+1. Open the [`index.html`](./index.html) file, copy the content and paste it in the HTML tab
     - You can use the "Copy raw content button"
 1. Open the `JavaScript` tab
 1. Click on the `JavaScript + No-Library (pure JS)` dropdown and change Language to `React`
-1. Paste the content of the [`react.js`](./react.js) file
+1. Open the [`react.js`](./react.js) file, copy the content and paste it in the React tab
     - You can use the "Copy raw content button"
     - Feel free to look through the code to see if you understand what it does
 1. Go to line 1 of the React code
@@ -68,7 +69,7 @@ You are running a succesful webshop. You have just developed a feature that allo
 1. Click on the `Flags` item in the left-side menu
 1. Click on the flag that you created in step 10
 1. Click on the icon that looks like bar chart :bar_chart:
-1. Verify that the number of users matches with your count from step 33
+1. Verify that the number of users matches with your count from step 34
 1. Congratulations! You've completed the lab
 
 ## Conclusion

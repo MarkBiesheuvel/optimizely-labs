@@ -26,6 +26,7 @@ Hold on! During our last lab we were testing a feature that would save a product
 1. Click on the `Create New Attribute...` button and enter the following fields
     - Attribute Key: Your prefix follow by `_is_logged_in`
     - Attribute Description: "Whether a visitor is logged in or not"
+1. Click on the `Save Attribute` button
 1. Click on the `Saved` item in the top-side menu
 1. Click on the `Create New Audience...` button and enter the following fields
     - Name: Your name followed by `- Logged in users`
@@ -41,19 +42,22 @@ Hold on! During our last lab we were testing a feature that would save a product
 1. Click on the plus icon at the top and enter the following values
     - Name: "Red"
     - Key: `red`
+1. Click on the `Save` button
 1. Click on the plus icon at the top and enter the following values
     - Name: "Green"
     - Key: `green`
+1. Click on the `Save` button
 1. Click on the plus icon at the top and enter the following values
     - Name: "Blue"
     - Key: `blue`
+1. Click on the `Save` button
 1. Click on the `Development` item in the left-side menu
 1. Click on the `Experiment` item in the middle of the page
-1. Click on the `Search and add audiences` field and select the audience your created in step 10
-1. Scroll to `Variations` in the right panel
+1. Click on the `Search and add audiences` field in the `Audiences` section and select the audience your created in step 11
+1. Scroll to `Variations` section
 1. Click on the `Off` dropdown and change it to `Red`
 1. Click on the `On` dropdown and change it to `Green`
-1. Click on the plus icon and select `Blue`
+1. Click on the plus icon to add a new variation and select `Blue`
     - Each variation should now automatically get 33.3% traffic
 1. Click on the `Save` button
 1. Congrats, your experiment is updated
@@ -61,11 +65,11 @@ Hold on! During our last lab we were testing a feature that would save a product
     - This is an online code editor, so you do not need to install anything on your computer
 1. In the top-right, click `Settings` and change the editor layout to `Tabs (columns)`
 1. Open the `HTML` tab
-1. Paste the content of the [`index.html`](./index.html) file
+1. Open the [`index.html`](./index.html) file, copy the content and paste it in the HTML tab
     - You can use the "Copy raw content button"
 1. Open the `JavaScript` tab
 1. Click on the `JavaScript + No-Library (pure JS)` dropdown and change Language to `React`
-1. Paste the content of the [`react.js`](./react.js) file
+1. Open the [`react.js`](./react.js) file, copy the content and paste it in the React tab
     - You can use the "Copy raw content button"
     - Feel free to look through the code to see if you understand what it does
 1. Go to line 1 of the React code
