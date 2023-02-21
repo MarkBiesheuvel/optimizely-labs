@@ -29,7 +29,7 @@ Hold on! During our last lab we were testing a feature that would save a product
 1. Click on the `Save Attribute` button
 1. Click on the `Saved` item in the top-side menu
 1. Click on the `Create New Audience...` button and enter the following fields
-    - Name: Your name followed by `- Logged in users`
+    - Name: Your prefix followed by ` - Logged in users`
     - Description: "Logged in users"
 1. Drag the attribute you created in step 8 from the right list to the middle
 1. Click on the `Select Type` dropdown and select `Boolean`

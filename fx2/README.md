@@ -30,16 +30,16 @@ Notepad!!
 1. Click on the `Create Event` button
 1. Click on the `Flags` item in the left-side menu
 1. Click on the `Create New Flag...` button and enter the following fields
-    - Name: Your name followed by `- Save button`
+    - Name: Your prefix followed by ` - Save button`
     - Key: Your prefix followed by `_save_button`
     - Description: "Toggle for save button"
 1. Click on the `Create Flag` button
-1. Click on the toggle at the top of the page to turn the flag `On`
+1. Click on the toggle at the top of the page to turn the flag on
 1. Click on the `Add rule` button and select `A/B Test`
 1. Keep most of the settings as-is
-1. Click on the `Select a Variation` dropdown in the `Variations` section and select `On`
 1. Click on the `Search to add metrics` field in the `Metrics` section and add the event you created in step 7
 1. Don't change any settings and click on the `Add metric` button
+1. Click on the `Select a Variation` dropdown in the `Variations` section and select `On`
 1. Click on the `Save` button
 1. Hurray! You're first feature experiment is done; now let's see it in action
 1. Open a new tab in your browser and go to [jsfiddle.net](https://jsfiddle.net/)

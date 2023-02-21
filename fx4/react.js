@@ -1,5 +1,6 @@
 const sdkKey = 'UURF9FECB7wHtC2QSMMkS';
-const flagKey = 'mb_save_button';
+const saveButtonflagKey = 'mb_save_button';
+const layoutflagKey = 'mb_product_layout';
 const eventKey = 'mb_product_interaction';
 const attributeKey = 'mb_is_logged_in';
 
@@ -34,7 +35,7 @@ const AddToCartButton = ({user, title}) => {
 // Save Button component
 const SaveButton = ({user, decisions, title}) => {
   // Get decision for flag key
-  const decision = decisions[flagKey];
+  const decision = decisions[saveButtonflagKey];
 
   if (decision.enabled) {
     // Handle clicks
@@ -59,20 +60,46 @@ const SaveButton = ({user, decisions, title}) => {
   }
 };
 
-// Product component
+// Product component (Control)
 const Product = ({user, decisions, title, image, description}) => {
-  return (
-    <div className="card">
-      <img className="card-img-top" src={image} alt={title}/>
-      <div className="card-body">
-        <h5 className="card-title">{title}</h5>
-        <p className="card-text">{description}</p>
-        <AddToCartButton title={title} user={user} decisions={decisions}/>
-        &nbsp;
-        <SaveButton title={title} user={user} decisions={decisions}/>
+  // Get decision for flag key
+  const decision = decisions[layoutflagKey];
+
+  // Return completly different layouts
+  if (decision.variationKey == 'control') {
+    // Simple card layout
+    return (
+      <div className="card">
+        <img className="card-img-top" src={image} alt={title}/>
+        <div className="card-body">
+          <h5 className="card-title">{title}</h5>
+          <p className="card-text">{description}</p>
+          <AddToCartButton title={title} user={user} decisions={decisions}/>
+          &nbsp;
+          <SaveButton title={title} user={user} decisions={decisions}/>
+        </div>
       </div>
-    </div>
-  );
+    );
+  } else {
+    // More complex layout
+    return (
+      <div className="card">
+        <div className="card-header">
+          <h5 className="card-title">{title}</h5>
+        </div>
+        <div className="card-body">
+          <div className="btn-group w-100">
+            <AddToCartButton title={title} user={user} decisions={decisions}/>
+            <SaveButton title={title} user={user} decisions={decisions}/>
+          </div>
+        </div>
+        <img className="card-img-top" src={image} alt={title}/>
+        <div className="card-body">
+          <p className="card-text">{description}</p>
+        </div>
+      </div>
+    );
+  }
 };
 
 // App component
@@ -87,13 +114,22 @@ const App = () => {
     [attributeKey]: isLoggedIn,
   });
   // Decide which variation to show to the user
-  const decisions = user.decideForKeys([flagKey]);
+  const decisions = user.decideForKeys([
+    saveButtonflagKey,
+    layoutflagKey,
+  ]);
+
+  // Some handy stats (only works if you do not change the names of the rules)
+  const isInLayoutExperiment = decisions[layoutflagKey].ruleKey.includes('experiment');
 
   return (
     <div className="row">
       <div className="col-12">
         <h1>Welcome user <code>{userId}</code></h1>
         <h3>You {isLoggedIn?'ARE':'are NOT'} logged in</h3>
+        <p>
+          Active experiment: {isInLayoutExperiment?'Product layout':'Save button'}
+        </p>
       </div>
       <div className="col">
         <Product
