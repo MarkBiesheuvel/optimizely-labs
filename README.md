@@ -14,7 +14,7 @@ These labs are simplified examples. Do as they say, not as they do.
 
 ## Index
 
-- `[___]` Instructions on how to set up a project for hands-on labs
+- `[___]` [Instructions on how to set up a project for hands-on labs](./setup)
 - `[FX2]` [Build your first feature experiment in Optimizely](./fx2)
 - `[FX3]` [Update your feature experiment to target audiences](./fx3)
 - `[FX4]` [Create your second feature experiment and make it exclusive](./fx4)
