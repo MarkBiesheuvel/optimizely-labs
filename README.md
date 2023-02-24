@@ -18,7 +18,7 @@ These labs are simplified examples. Do as they say, not as they do.
 - `[FX2]` [Build your first feature experiment in Optimizely](./fx2)
 - `[FX3]` [Update your feature experiment to target audiences](./fx3)
 - `[FX4]` [Create your second feature experiment and make it exclusive](./fx4)
-- `[FX5]` Make your feature experiment customizable within the admin interface
+- `[FX5]` [Make your feature experiment customizable within the admin interface](./fx5)
 - `[FX6]` Make your feature experiment production ready
 - `[WX2]` Build your first web experiment in Optimizely
 - `[WX3]` Update your web experiment to target audiences
