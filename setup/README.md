@@ -3,3 +3,10 @@
 For the best experience, it is recommended to create separate project(s) for the hands-on labs.
 Go to "Account Settings" > "Projects" and create one Full Stack project for called "Hands-on labs - Feature Experimentation" and one Web project called "Hands-on labs - Web Experimentation".
 Go to "Account Settings" > "Projects" and create a user account for every participant of the training programme and give them the "Publisher" role in both projects.
+
+
+## Settings for "Hands-on labs - Web Experimentation"
+- Disable "Mask descriptive names in project code and third-party integrations"
+- Cache Expiration (TTL): "Don't cache"
+- Disable "Support for Dynamic Websites"
+- Disable "Trim Unused Pages"

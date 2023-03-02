@@ -8,7 +8,7 @@ You already have a user account in Optimzily and created a separate project for 
 
 ## Introduction
 
-You are running a succesful webshop. You have notived that the add-to-cart rate is relatively low, so you want to experiment with different colors and copy to see if you can increase this conversion rate. Thefore, you will create an A/B test in Optimizely Web. Let's get started!
+You are running a succesful webshop. You have noticed that the add-to-cart rate is relatively low, so you want to experiment with different colors and copy to see if you can increase this conversion rate. Thefore, you will create an A/B test in Optimizely Web. Let's get started!
 
 ## Instructions
 
@@ -26,8 +26,9 @@ You are running a succesful webshop. You have notived that the add-to-cart rate 
 1. Keep the "Page Settings" as-is and add the follow url in the field in "URL matches these URL(s):" section
     - `https://d2rd6osytpi57k.cloudfront.net/index.html`
 1. Click on the `Add Condition` dropdown and select `JavaScript Condition`
-1. Paste the following code snippet in the "Custom Code" field and replace the prefix `jd` with your own prefix
-    - `function condition() { return window.prefix === "mb"; }`
+1. Remove everything from the "Custom Code" field
+1. Paste the following code in the "Custom Code" field and replace the prefix `jd` with your own prefix
+    - `function condition() { return window.prefix === "jd"; }`
 1. Click on the `Create Page` button
 
 1. Click on the `Events` item in the top-side menu
