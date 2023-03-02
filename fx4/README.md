@@ -17,7 +17,7 @@ Our first experiment is doing well and is collecting data. While we wait for it 
     - You could use a nickname, your initials, postal code, or date of birth
     - For example, John Doe could use the prefix `jd`
 1. Login to the Optimizely admin interface at [app.optimizely.com](https://app.optimizely.com/)
-1. Select the project that is called `Hands-on labs` and has the type `Full Stack`
+1. Select the project that is called `Hands-on labs - Feature Experimentation`
 1. Click on the `Setting` item in the left-side menu
 1. Copy the `SDK Key` that's listed under `Development` and store it in a temporary note or document
     - For example: "UURF9FECB7wHtC2QSMMkS"

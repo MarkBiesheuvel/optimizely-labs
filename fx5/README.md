@@ -13,7 +13,7 @@ Creating a new feature flag always requires a developer to write some code to ha
 ## Instructions
 
 1. Login to the Optimizely admin interface at [app.optimizely.com](https://app.optimizely.com/)
-1. Select the project that is called `Hands-on labs` and has the type `Full Stack`
+1. Select the project that is called `Hands-on labs - Feature Experimentation`
 1. Click on the `Setting` item in the left-side menu
 1. Copy the `SDK Key` that's listed under `Development` and store it in a temporary note or document
     - For example: "UURF9FECB7wHtC2QSMMkS"
