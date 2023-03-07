@@ -18,7 +18,7 @@ const AddToCartButton = ({title, user}) => {
 };
 
 // Save Button component
-const SaveButton = ({title, decisions}) => {
+const SaveButton = ({title, user, decisions}) => {
   // Get decision for flag key
   const decision = decisions[flagKey];
 
