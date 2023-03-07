@@ -37,7 +37,7 @@ You are running a succesful webshop. You have just developed a feature that allo
 1. Enter the following fields:
     - Name: Your prefix followed by ` - Save button experiment`
     - Key: Your prefix followed by `_save_button_experiment`
-1. Click on the `Search to add metrics` field in the `Metrics` section and add the event you created in step 7
+1. Click on the `Search to add metrics` field in the `Metrics` section and add the event you created in steps 7-8
 1. Don't change any settings and click on the `Add metric` button
 1. Click on the `Select a Variation` dropdown in the `Variations` section and select `On`
 1. Click on the `Save` button
@@ -57,9 +57,9 @@ You are running a succesful webshop. You have just developed a feature that allo
 1. Go to line 1 of the React code
 1. Paste the SDK key you copied in step 5 between the two apostrophes
 1. Go to line 2 of the React code
-1. Paste the feature flag key you created in step 10
+1. Paste the feature flag key you created in steps 10-11
 1. Go to line 3 of the React code
-1. Paste the event flag key you created in step 7
+1. Paste the event flag key you created in steps 7-8
 1. Click `Run` in the top-left corner
     - Every time you click run you will emulate a different user
 1. Keep count of how many users do and do not see the `Save` button
@@ -68,9 +68,9 @@ You are running a succesful webshop. You have just developed a feature that allo
     - It takes a few minutes for the results are available
 1. Go back to [app.optimizely.com](https://app.optimizely.com/)
 1. Click on the `Flags` item in the left-side menu
-1. Click on the flag that you created in step 10
+1. Click on the flag that you created in steps 10-11
 1. Click on the icon that looks like bar chart :bar_chart:
-1. Verify that the number of users matches with your count from step 34
+1. Verify that the number of users matches with your count from step 35
 1. Congratulations! You've completed the lab
 
 ## Conclusion
