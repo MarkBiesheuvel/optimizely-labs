@@ -31,7 +31,7 @@ Hold on! During our last lab we were testing a feature that would save a product
 1. Click on the `Create New Audience...` button and enter the following fields
     - Name: Your prefix followed by ` - Logged in users`
     - Description: "Logged in users"
-1. Drag the attribute you created in step 8 from the right list to the middle
+1. Drag the attribute you created in steps 8-9 from the right list to the middle
 1. Click on the `Select Type` dropdown and select `Boolean`
 1. Click on the `is false` dropdown and select `is true`
 1. Click on the `Save Audience` button
@@ -52,8 +52,8 @@ Hold on! During our last lab we were testing a feature that would save a product
     - Key: `blue`
 1. Click on the `Save` button
 1. Click on the `Development` item in the left-side menu
-1. Click on the `Experiment` item in the middle of the page
-1. Click on the `Search and add audiences` field in the `Audiences` section and select the audience your created in step 11
+1. Click on the "Save Button Experiment" item in the middle of the page
+1. Click on the `Search and add audiences` field in the `Audiences` section and select the audience your created in steps 11-15
 1. Scroll to `Variations` section
 1. Click on the `Off` dropdown and change it to `Red`
 1. Click on the `On` dropdown and change it to `Green`
@@ -79,7 +79,7 @@ Hold on! During our last lab we were testing a feature that would save a product
 1. Go to line 3 of the React code
 1. Paste the event flag key you created in the previous lab
 1. Go to line 4 of the React code
-1. Paste the attribute flag key you created in step 8
+1. Paste the attribute flag key you created in steps 8-9
 1. Click `Run` in the top-left corner
     - Every time you click run you will emulate a different user
     - The subtitle specifies whether the user is logged in or not
