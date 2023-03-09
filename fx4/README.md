@@ -41,15 +41,18 @@ Our first experiment is doing well and is collecting data. While we wait for it 
 1. Click on the toggle at the top of the page to turn the flag on
 1. Click on the `Off` dropdown under "For everyone in Development" and select `Control`
 1. Click on the `Add rule` button and select `A/B Test`
-1. Keep most of the settings as-is
+1. Enter the following fields:
+    - Name: Your prefix followed by ` - Product layout experiment`
+    - Key: Your prefix followed by `_product_layout_experiment`
 1. Click on the `Search to add metrics` field in the `Metrics` section and add the event you created in FX2
 1. Don't change any settings and click on the `Add metric` button
 1. Click on the `Select a Variation` dropdown in the `Variations` section and select `Treatment`
-1. exclusion group
 1. Click on the `Save` button
 1. Search the flag you created in lab FX2 and click on that Flag
 1. Click on the `Add rule` button and select `Targeted Delivery`
-1. Keep most of the settings as-is
+1. Enter the following fields:
+    - Name: Your prefix followed by ` - Save button default`
+    - Key: Your prefix followed by `_save_button_default`
 1. Click on the `Search and add audiences` field in the `Audiences` section and select the audience your created in lab FX3
 1. Click on the dropdown in the `Deliver` section and select `Red`
 1. Click on the `Save` button
@@ -59,7 +62,7 @@ Our first experiment is doing well and is collecting data. While we wait for it 
     - Description: ""
 1. Click on the dropdown under "Environment" and select `Development`
 1. Search for the experiment you created in lab FX2 and add it
-1. Search for the experiment you created in step 23 and add it
+1. Search for the experiment you created in steps 17-22 and add it
 1. Enter `50` in the both field under "Traffic Allocation"
 1. Click on the `Create Exclusion Group` button
 1. Click on the `Save Group` button
@@ -80,7 +83,7 @@ Our first experiment is doing well and is collecting data. While we wait for it 
 1. Go to line 2 of the React code
 1. Paste the feature flag key you created in lab FX2
 1. Go to line 3 of the React code
-1. Paste the feature flag key you created in step 23
+1. Paste the feature flag key you created in steps 6-8
 1. Go to line 4 of the React code
 1. Paste the event flag key you created in lab FX2
 1. Go to line 4 of the React code
@@ -90,6 +93,6 @@ Our first experiment is doing well and is collecting data. While we wait for it 
     - The subtitle specifies whether the user is logged in or not
     - The subtext specifies which experiment of the exclusion group is active
 1. Notice that the "Save" button is still only showed when users are logged in
-    - When the layout experiment is active, the "Save" button is "Red" due our change in step 25-29
+    - When the layout experiment is active, the "Save" button is "Red" due our change in steps 24-28
     - When the save button experiment is active and a user is not logged in, nothing is change
 1. Congratulations! You've completed the lab
