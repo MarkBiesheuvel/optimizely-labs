@@ -48,6 +48,7 @@ Our first experiment is doing well and is collecting data. While we wait for it 
 1. Don't change any settings and click on the `Add metric` button
 1. Click on the `Select a Variation` dropdown in the `Variations` section and select `Treatment`
 1. Click on the `Save` button
+1. Click on the icon in the top-right that looks like a play button :arrow_forward:
 1. Search the flag you created in lab FX2 and click on that Flag
 1. Click on the `Add rule` button and select `Targeted Delivery`
 1. Enter the following fields:
@@ -56,6 +57,7 @@ Our first experiment is doing well and is collecting data. While we wait for it 
 1. Click on the `Search and add audiences` field in the `Audiences` section and select the audience your created in lab FX3
 1. Click on the dropdown in the `Deliver` section and select `Red`
 1. Click on the `Save` button
+1. Click on the icon in the top-right that looks like a play button :arrow_forward:
 1. Click on the `Exclusion Groups` item in the top-side menu
 1. Click on the `Create New Exclusion Group…` button and enter the following fields
     - Exclusion Group Name: Your prefix followed by ` - Exclusion Group`
