@@ -58,7 +58,6 @@ Lab: [Create your second feature experiment and make it exclusive](./fx4)
 ### `[FX5]` Templating
 - What are variables?
 - How to use variables in a feature experimentation
-- How to schedule an experiment using variables (including demo by M&S)
 - Best practices to make experiments customizable
 
 Lab: [Make your feature experiment customizable within the admin interface](./fx5)
