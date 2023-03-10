@@ -63,11 +63,13 @@ Lab: [Create your second feature experiment and make it exclusive](./fx4)
 Lab: [Make your feature experiment customizable within the admin interface](./fx5)
 
 ### `[FX6]` Quality assurance and troubleshooting
+- Environments
+- QA audience
 - Forced variations
 - Triggering events
-- Adjusting audiences
+- How are conversions counted?
 
-Lab: Make your feature experiment production ready]
+Lab: [Make your feature experiment production ready](./fx6)
 
 ### `[WX1]` Introduction to Optimizely
 - See `[FX1]`
