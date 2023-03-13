@@ -85,13 +85,13 @@ Our first experiment is doing well and is collecting data. While we wait for it 
 1. Go to line 1 of the React code
 1. Paste the SDK key you copied in step 5 between the two apostrophes
 1. Go to line 2 of the React code
-1. Paste the feature flag key you created in lab FX2
+1. Paste the flag key you created in lab FX2
 1. Go to line 3 of the React code
-1. Paste the feature flag key you created in steps 6-8
+1. Paste the flag key you created in steps 6-8
 1. Go to line 4 of the React code
-1. Paste the event flag key you created in lab FX2
-1. Go to line 4 of the React code
-1. Paste the attribute flag key you created in lab FX3
+1. Paste the event key you created in lab FX2
+1. Go to line 5 of the React code
+1. Paste the attribute key you created in lab FX3
 1. Click `Run` in the top-left corner
     - Every time you click run you will emulate a different user
     - The subtitle specifies whether the user is logged in or not

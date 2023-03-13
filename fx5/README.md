@@ -15,9 +15,10 @@ Creating a new feature flag always requires a developer to write some code to ha
 1. Login to the Optimizely admin interface at [app.optimizely.com](https://app.optimizely.com/)
 1. Select the project that is called `Hands-on labs - Feature Experimentation`
 1. Click on the `Setting` item in the left-side menu
-1. Copy the `SDK Key` that's listed under `Development` and store it in a temporary note or document
+1. Copy the `SDK Key` that's listed under `Development` 
     - For example: "UURF9FECB7wHtC2QSMMkS"
     - You can click the "Copy to clipboard" icon
+    - Store the value in a temporary note or document
 1. Search the flag you created in lab FX2 and click on that Flag
 1. Click on the `Variables` item in the left-side menu
 1. Click the plus icon to add a variable, choose `String`, and enter the following values:
@@ -72,11 +73,11 @@ Creating a new feature flag always requires a developer to write some code to ha
 1. Go to line 1 of the React code
 1. Paste the SDK key you copied in step 4 between the two apostrophes
 1. Go to line 2 of the React code
-1. Paste the feature flag key you created in FX2
+1. Paste the flag key you created in FX2
 1. Go to line 3 of the React code
-1. Paste the event flag key you created in FX2
+1. Paste the event key you created in FX2
 1. Go to line 4 of the React code
-1. Paste the attribute flag key you created in FX3
+1. Paste the attribute key you created in FX3
 1. Click `Run` in the top-left corner
     - Every time you click run you will emulate a different user
 1. Notice how both the color and the text change depending on the variation

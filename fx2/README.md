@@ -57,9 +57,9 @@ You are running a succesful webshop. You have just developed a feature that allo
 1. Go to line 1 of the React code
 1. Paste the SDK key you copied in step 5 between the two apostrophes
 1. Go to line 2 of the React code
-1. Paste the feature flag key you created in steps 10-11
+1. Paste the flag key you created in steps 10-11
 1. Go to line 3 of the React code
-1. Paste the event flag key you created in steps 7-8
+1. Paste the event key you created in steps 7-8
 1. Click `Run` in the top-left corner
     - Every time you click run you will emulate a different user
 1. Keep count of how many users do and do not see the `Save` button
