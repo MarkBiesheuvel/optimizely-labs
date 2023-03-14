@@ -4,11 +4,11 @@ In this hands-on lab, you will create a feature experiment from scratch. You wil
 
 ## Prerequisites
 
-You already have a user account in Optimzily and created a separate project for the hands-on labs.
+You already have a user account in Optimizely and created a separate project for the hands-on labs.
 
 ## Introduction
 
-You are running a succesful webshop. You have just developed a feature that allows logged-in users to save products to their wishlist. Before releasing this feature to everyone, you want to make sure that this does indeed increase product interactions and doesn't decrease purchases. Therefore, we will create an A/B test where 50% does not see the save button, and the other 50% does. Let's get started!
+You are running a successful webshop. You have just developed a feature that allows logged-in users to save products to their wishlist. Before releasing this feature to everyone, you want to make sure that this does indeed increase product interactions and doesn't decrease purchases. Therefore, we will create an A/B test where 50% does not see the save button, and the other 50% does. Let's get started!
 
 ## Instructions
 

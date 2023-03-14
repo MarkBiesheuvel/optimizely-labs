@@ -4,7 +4,7 @@ In this lab, you will validate all the variations and deploy the experiment to p
 
 ## Prerequisites
 
-You alread completed [`[FX5]`](../fx5/).
+You already completed [`[FX5]`](../fx5/).
 
 ## Introduction
 
@@ -53,9 +53,9 @@ Let's see how this work!
 1. Go to line 4 of the React code
 1. Paste the attribute key you copied in step 11 between the two apostrophes
 1. Click the `Run` button in the top-left
-1. Notice how the page contains a readonly field containing the "Original decision"
+1. Notice how the page contains a read-only field containing the "Original decision"
     - This is what the Optimizely SDK would return under normal circumstances
-1. Notice how the page also contains a drowpdown which allows you to select a "Forced decision"
+1. Notice how the page also contains a dropdown which allows you to select a "Forced decision"
     - This can be used during testing or QA to verify all variations
 1. Use the "Forced decision" dropdown to view all variations without changing the user ID
 1. If all variations look good to you, then it's time to deploy to production!
@@ -68,13 +68,14 @@ Let's see how this work!
 1. Click on the toggle at the top of the page to turn the flag on
 1. Congratulations! Your experiment is now running in production
 
-## Challange
+## Challenge
 
-The challange has less detailed instruction on purpose to make it more challanging.
+The challenge has less detailed instruction on purpose to make it more challenging.
 
 1. Find the SDK key for Production and copy it
 1. Replace the SDK key in JSfiddle with the production SDK key
 1. That's it. This is how your application would look like in production
+1. Congratulations! You've completed the lab and the challenge
 
 ## Conclusion
 

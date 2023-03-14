@@ -1,8 +1,8 @@
 # Hands-on labs for Optimizely Web/Feature Experimentation
 
-This is a collections of hands-on labs for a custom training programma from Expert Services.
+This is a collections of hands-on labs for a custom training programme from Expert Services.
 
-The training porgramming starts with a combined introductions for both Web Experimentation and Feature experimentation. This first session does not have a hands-on lab. After the introduction sessions there are separate tracks for either Web or Feature Experimentation, denoted by the `[WX_]` or `[FX_]` tag respectively. 
+The training programme starts with a combined introductions for both Web Experimentation and Feature experimentation. This first session does not have a hands-on lab. After the introduction sessions there are separate tracks for either Web or Feature Experimentation, denoted by the `[WX_]` or `[FX_]` tag respectively.
 
 ## Acknowledgements
 

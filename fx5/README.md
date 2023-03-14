@@ -93,9 +93,9 @@ Creating a new feature flag always requires a developer to write some code to ha
     - Every time you click run you will emulate a different user
 1. Notice how both the color and the text change depending on the variation
 
-## Challange
+## Challenge
 
-The challange has less detailed instruction on purpose to make it more challanging.
+The challenge has less detailed instruction on purpose to make it more challenging.
 
 1. Go back to the Optimizely admin interface
     - Keep JSFiddle open for later
@@ -105,7 +105,7 @@ The challange has less detailed instruction on purpose to make it more challangi
 1. Add the new variations to the experiment and save
 1. Go back to JSFiddle and run the code again
 1. Notice how your newly created variations are visible without requiring any code changes
-1. Congratulations! You've completed the lab and the challange
+1. Congratulations! You've completed the lab and the challenge
 
 ## Conclusion
 

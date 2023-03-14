@@ -35,7 +35,7 @@ Hold on! During our last lab we were testing a feature that would save a product
 1. Click on the `Select Type` dropdown and select `Boolean`
 1. Click on the `is false` dropdown and select `is true`
 1. Click on the `Save Audience` button
-1. Hurray! You have now succesfully created an audiences
+1. Hurray! You have now successfully created an audiences
 1. Click on the `Flags` item in the left-side menu
 1. Click on the flag which you created in the previous lab
 1. Click on the `Variations` item in the left-side menu

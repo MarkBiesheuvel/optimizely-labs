@@ -4,11 +4,11 @@ In this hands-on lab, you will create a feature experiment from scratch.
 
 ## Prerequisites
 
-You already have a user account in Optimzily and created a separate project for the hands-on labs.
+You already have a user account in Optimizely and created a separate project for the hands-on labs.
 
 ## Introduction
 
-You are running a succesful webshop. You have noticed that the add-to-cart rate is relatively low, so you want to experiment with different colors and copy to see if you can increase this conversion rate. Thefore, you will create an A/B test in Optimizely Web. Let's get started!
+You are running a successful webshop. You have noticed that the add-to-cart rate is relatively low, so you want to experiment with different colors and copy to see if you can increase this conversion rate. Therefore, you will create an A/B test in Optimizely Web. Let's get started!
 
 ## Instructions
 

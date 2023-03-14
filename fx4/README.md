@@ -9,7 +9,7 @@ Your current Optimizely plan has Exclusion Groups enabled (i.e. the Scale packag
 
 ## Introduction
 
-Our first experiment is doing well and is collecting data. While we wait for it to reach statistical significance, we are going to build our second experiment. However, the only challange is that these two experiments do not work together. We want a visitor to be either in experiment 1 or in experiment 2, but never both. Let's create an exclusion group!
+Our first experiment is doing well and is collecting data. While we wait for it to reach statistical significance, we are going to build our second experiment. However, the only challenge is that these two experiments do not work together. We want a visitor to be either in experiment 1 or in experiment 2, but never both. Let's create an exclusion group!
 
 ## Instructions
 
