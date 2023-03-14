@@ -19,7 +19,18 @@ Creating a new feature flag always requires a developer to write some code to ha
     - For example: "UURF9FECB7wHtC2QSMMkS"
     - You can click the "Copy to clipboard" icon
     - Store the value in a temporary note or document
-1. Search the flag you created in lab FX2 and click on that Flag
+1. Click on the `Flags` item in the left-side menu
+1. Search for the flag your created in lab FX2 and copy the "Key"
+    - Store the value in a temporary note or document
+1. Click on the `Events` item in the left-side menu
+1. Search for the event your created in lab FX2, click on it, and copy the "Event Key"
+    - Store the value in a temporary note or document
+1. Click on the `Audiences` item in the left-side menu
+1. Click on the `Attributes` item in the top-side menu
+1. Search for the attribute your created in lab FX3, click on it, and copy the "Attribute Key"
+    - Store the value in a temporary note or document
+1. Click on the `Flags` item in the left-side menu
+1. Search for the flag you created in lab FX2 and click on it
 1. Click on the `Variables` item in the left-side menu
 1. Click the plus icon to add a variable, choose `String`, and enter the following values:
     - Variable Key: `color`
@@ -73,11 +84,11 @@ Creating a new feature flag always requires a developer to write some code to ha
 1. Go to line 1 of the React code
 1. Paste the SDK key you copied in step 4 between the two apostrophes
 1. Go to line 2 of the React code
-1. Paste the flag key you created in FX2
+1. Paste the flag key you copied in step 6 between the two apostrophes
 1. Go to line 3 of the React code
-1. Paste the event key you created in FX2
+1. Paste the event key you copied in step 8 between the two apostrophes
 1. Go to line 4 of the React code
-1. Paste the attribute key you created in FX3
+1. Paste the attribute key you copied in step 11 between the two apostrophes
 1. Click `Run` in the top-left corner
     - Every time you click run you will emulate a different user
 1. Notice how both the color and the text change depending on the variation
