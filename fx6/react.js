@@ -93,13 +93,12 @@ const App = ({user}) => {
   const [forcedVariationKey, setforcedVariationKey] = React.useState("");
 
   // Decide which original variation to show to the user
+  user.removeForcedDecision({flagKey});
   const originalDecisions = user.decideForKeys([flagKey]);
   
   // Set a forced decision, if applicable
   if (forcedVariationKey) {
     user.setForcedDecision({flagKey}, {variationKey: forcedVariationKey});
-  } else {
-    user.removeForcedDecision({flagKey});
   }
 
   // Decide which (forced?) variation to show to the user
