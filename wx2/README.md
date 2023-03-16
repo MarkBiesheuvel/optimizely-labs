@@ -1,6 +1,6 @@
 # `[WX2]` Build your first web experiment in Optimizely
 
-In this hands-on lab, you will create a feature experiment from scratch. 
+In this hands-on lab, you will create a web experiment from scratch.
 
 ## Prerequisites
 
@@ -23,7 +23,7 @@ You are running a successful webshop. You have noticed that the add-to-cart rate
     - Name: Your prefix followed by ` - Product listing`
     - Editor URL: `https://d2rd6osytpi57k.cloudfront.net/index.html`
     - Description: "Product listing page (PLP)"
-1. Keep the "Page Settings" as-is and add the follow url in the field in "URL matches these URL(s):" section
+1. Keep the "Page Settings" as-is and add the following value in the field in "URL matches these URL(s):" section
     - `https://d2rd6osytpi57k.cloudfront.net/index.html`
 1. Click on the `Add Condition` dropdown and select `JavaScript Condition`
 1. Remove everything from the "Custom Code" field
@@ -56,6 +56,7 @@ You are running a successful webshop. You have noticed that the add-to-cart rate
 1. Modify the `HTML` field and enter a welcome message that includes your name, so you can recognize your experiment
     - For example: "Hello, John Doe!"
 1. Click on the `Save` button
+
 1. Click on the `Create >` button
 1. Select `Element Change`
 1. Enter `.btn` in the "Selector" field and click on the checkmark next to it
@@ -69,6 +70,11 @@ You are running a successful webshop. You have noticed that the add-to-cart rate
 1. Click on the `> Click Events` item in the list
 1. Select the event you created in steps 11-15
 1. Click on the `Save to Experiment` button
+1. Click on the `Save` button
+
+1. Click on the `Traffic Allocation` item in the left-side menu
+1. Set "Original" to "0%" and "Variation #1" to "100%"
+    - Note that it is not recommended to adjust the traffic allocation for real experiments
 1. Click on the `Save` button
 
 1. Click on the `Start Experiment` button
