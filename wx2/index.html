@@ -3,45 +3,7 @@
     <title>Hands-on labs: Optimizely Web Experimentation</title>
 
     <!-- Code to handle the prefix input field and cookie -->
-    <script>
-      (() => {
-        // Regular expression to match the prefix cookie
-        const regex = /(^|\s)prefix=(.*?)(;|$)/;
-
-        // Find the value of the prefix cookie
-        if (regex.test(document.cookie)) {
-          window.prefix = document.cookie.match(regex)[2];
-        } else {
-          window.prefix = '';
-        }
-
-        // Initialize Optimizely variable
-        window.optimizely = [];
-
-        // Add listener
-        window.optimizely.push({
-          type: 'addListener',
-          filter: {type: 'lifecycle', name: 'initialized'},
-          handler: () => {
-            // Wait until the #prefix element is on the page
-            const utils = window.optimizely.get('utils');
-            utils.waitForElement('#prefix').then((element) => {
-              // Set the value equal to the current prefix
-              element.value = prefix;
-              // Update the cookie any time a new letter is added
-              element.addEventListener('keyup', () => {
-                window.prefix = event.target.value;
-                document.cookie = `prefix=${window.prefix}`;
-              });
-              // Reload the page once someone finished changing the prefix
-              element.addEventListener('change', () => {
-                window.location.reload();
-              });
-            });
-          },
-        });
-      })();
-    </script>
+    <script src="script.js"></script>
     <!--
       /* The following code could be used to dynamically load the snippet, for now let's hardcode it */
       const accountId = '23367580371';
@@ -55,8 +17,8 @@
     <link href="https://unpkg.com/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
-    <div class="container mt-3">
-      <div class="row">
+    <div class="container">
+      <div class="row mt-3">
         <div class="col-12">
           <h1>Welcome</h1>
         </div>
@@ -69,7 +31,7 @@
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row mt-3">
         <div class="product col-12 col-md-6 col-lg-3 mb-3">
           <div class="card">
             <img class="card-img-top" src="https://cdn.shopify.com/s/files/1/0923/0916/products/TM56P13MCAM_Zoom_F_1_grande.jpg" alt="Camel Marl Woven Scarf">

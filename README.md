@@ -87,7 +87,7 @@ Lab: [Build your first web experiment in Optimizely](./wx2)
 - How to set up custom attributes
 - Third-party integrations
 
-Lab: Update your web experiment to target audiences
+Lab: [Update your web experiment to target audiences](./wx3/)
 
 ### `[WX4]` Exclusion groups
 - See `[FX4]`
