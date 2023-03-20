@@ -1,6 +1,6 @@
 # `[WX3]`  Update your web experiment to target audiences
 
-In this hands-on lab, you will modify your existing web experiment to only target ....
+In this hands-on lab, you will modify your existing web experiment to only target visitors from a specific ad campaign.
 
 ## Prerequisites
 

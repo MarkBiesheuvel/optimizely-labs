@@ -72,7 +72,7 @@ Lab: [Make your feature experiment customizable within the admin interface](./fx
 Lab: [Make your feature experiment production ready](./fx6)
 
 ### `[WX1]` Introduction to Optimizely
-- See `[FX1]`
+- See [`[FX1]`](#fx1-introduction-to-optimizely)
 
 ### `[WX2]` Creating a web experiment
 - What are pages, events, and experiments?
@@ -90,7 +90,7 @@ Lab: [Build your first web experiment in Optimizely](./wx2)
 Lab: [Update your web experiment to target audiences](./wx3/)
 
 ### `[WX4]` Exclusion groups
-- See `[FX4]`
+- See [`[FX4]`](#fx4-exclusion-groups)
 
 ### `[WX5]` Custom code
 - Page activation triggers
@@ -98,7 +98,7 @@ Lab: [Update your web experiment to target audiences](./wx3/)
 - Optimizely functions
 - Examples
 
-Lab: Build a web experiment that dynamically activates
+Lab: [Build a web experiment that dynamically activates](./wx5)
 
 ### `[WX6]` Quality assurance and troubleshooting
 - Preview tool and share link
@@ -107,4 +107,4 @@ Lab: Build a web experiment that dynamically activates
 - Chrome browser extensions
 - Browser developer tools
 
-Lab: Creating a multi-page (funnel) test
+Lab: [Creating a multi-page (funnel) test](./wx6)
