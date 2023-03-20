@@ -4,7 +4,7 @@ In this hands-on lab, you will modify your existing web experiment to run across
 
 ## Prerequisites
 
-You already completed [`[WX2]`](../wx2/).
+You already completed [`[WX3]`](../wx3/).
 
 ## Instructions
 
