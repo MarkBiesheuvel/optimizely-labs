@@ -6,7 +6,7 @@ In this hands-on lab, you will modify your existing web experiment to only targe
 
 You already completed [`[WX2]`](../wx2/).
 
-## Introduction
+## Instructions
 
 1. To prevent everyone from seeing the same experiment, pick a prefix that is unique to you
     - You could use a nickname, your initials, postal code, or date of birth
@@ -66,7 +66,7 @@ You already completed [`[WX2]`](../wx2/).
 
 1. Click on the `Start Experiment` button
 1. Click on the `Start Experiment` button again
-1. Hurray! You're first web experiment is now live
+1. Hurray! You're second web experiment is now live
 1. Go to https://d2rd6osytpi57k.cloudfront.net/index.html in a new tab
 1. Enter your prefix in the prefix field and reload the page
 1. Notice how only your previous experiment is currently visible
